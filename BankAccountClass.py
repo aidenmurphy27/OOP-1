@@ -22,6 +22,15 @@ class BankAccount:
     def withdraw(self, amount):
       self.balance -= amount
 
+      if self.balance < self.withdraw:
+          print('Invalid entry, not enough money in your account')
+      else:
+          self.balance -= abs(amount)
+
+      if self.withdraw < 0: 
+          print('Invalid entry, please input a positive number')
+
+
       # The get_balance method returns the
       # account balance.
 
