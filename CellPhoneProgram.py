@@ -1,9 +1,8 @@
 import CellPhoneClass as c
 
 def main():
+    phone = c.Cellphone('Apple', 'iPhone 12', 699.99)
 
-    get_manufact = input("Enter the cell phone's manufacturer: ")
+    print(f"{phone.get_manufact()}, {phone.get_model()}, ${phone.get_retail_price()}")
 
-    get_model = input("Enter the cell phone's model")
-
-    get_retail_price = float(input("Enter the cell phone's price"))
+main()
